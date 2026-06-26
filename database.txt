@@ -1,0 +1,33 @@
+INSERT INTO Trainer (
+  TrainerID, Name, Specialization, Contact
+) VALUES (
+  'T011', 'Ali Ahmmed', 'Yoga', '055009900'
+);
+
+
+
+
+---------------------------------------------------------
+INSERT INTO MembershipPlan (
+  PlanID, PlanName, Price, Duration, Benefits
+) VALUES (
+  'E011', 'extra primum', 2000.00, '2 years month', 'Access to everything including the workshop or stores on the gym'
+);
+
+
+
+--------------------------------------------------------
+
+
+INSERT INTO Member (
+  MemberID, Name, Email, Phone, JoinDate,
+  PlanID, EmergencyContactName, EmergencyContactRelationship, EmergencyContactPhone
+) VALUES (
+  'M021', 'Ali Hassan', 'ali@example.com', '0550000441',
+  TO_DATE('10-04-2023', 'DD-MM-YYYY'),
+  'P002', 'Saleh Hassan', 'Brother', '0560005502'
+);
+
+Plan ID here from the PlanMember ship should match the ID from it 
+
+
